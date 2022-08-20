@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+	<head>
+		<title>Sub Sayfa</title>
+		<link rel="stylesheet" href="sub.css">
+	</head>
+	<body>
+		<h1>Sub sayfaya hoşgeldiniz</h1>
+		<a href="index.html"><h2>Ana Sayfaya dönmek için tıklayınız</h2></a>
+		<a href="index.html" target="_blank"><h3>Ana Sayfaya yeni sekme ile dönmek için tıklayınız</h3></a>
+		<a href="subsub.html" target="_self"><h2>Subsub Sayfasına git</h2></a>
+		<a id="a01" href="index.html#h2_01" target="_self">Ana Sayfadaki farklılığı olan yere git</a> 
+		<p>Bu yazı resimli bir yazıdır.<img src="imgexample/car.jpg" style="width: 100px;height: 100; float: left;"></p>
+		<br>
+		<br>
+		<h2>Aşşağıdaki resim imagemap şeklindedir.</h2>
+		<br>
+		<img src="imgexample/boy.jpg" alt="the boy" usemap="#lol" style="width: 300px; height: 300px;">
+		<map name="lol">
+			<area shape="rect" coords="200,100,250,150" alt="Gözlük" href="imgexample/avatar1.png" target="_blank">
+			<area shape="circle" coords="0,0,50,50" alt="Hiçlik" href="imgexample/avatar2.png" target="_blank" onclick="myfunct()">	
+		</map>
+		<br>
+		<picture>
+			<source media="(min-width: 1000px)" srcset="imgexample/architect.jpg">
+			<source media="(min-width: 500px)" srcset="imgexample/avatar1.png">
+			<img src="imgexample/cars1.jpg" style="width: auto;">
+		</picture>
+	</body>
+</html>
