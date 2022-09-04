@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="navbar.css">
+</head>
+
+<body onload="whereIam()">
+	<h1 id="baslik">RedHill</h1>
+	<h2 id="altbaslik">GameNight+ tarafından güçlendirildi</h2>
+	<nav>
+		<a id="a1" onclick="setVisited('a1')" target="_parent" href="../index.html">Anasayfa</a>
+		<a id="a2" onclick="setVisited('a2')" target="_parent" href="../contact.html">İletişim</a>
+		<a id="a3" onclick="setVisited('a3')" target="_parent" href="navbar.html" style="float: right;">Navbar</a>
+		<a id="a5" onclick="setVisited('a5')" target="_parent" href="../register.html" style="float: right;">Kayıt ol</a>
+		<a id="a6" onclick="setVisited('a6')" target="_parent" href="../login.html" style="float: right;">Giriş yap</a>
+		<a id="a7" onclick="setVisited('a7')" target="_parent" href="../validate.html" style="float: right;">Onayla</a>
+	</nav>
+	<script>
+		function setVisited(text) {
+			sessionStorage.whereIam = text;
+		}
+		function whereIam() {
+			if (sessionStorage.whereIam)
+				document.getElementById(sessionStorage.whereIam).style.color = "gray";
+				
+			else {
+				sessionStorage.whereIam = "a1";
+				whereIam();
+			}
+		}
+	</script>
+</body>
+
+</html>

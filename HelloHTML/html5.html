@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML5 Anasayfa</title>
+
+	</head>
+	<body>
+		<canvas id="mycanvas" width="350" height="250" style="border: 1px solid black"></canvas>
+		<svg width="300" height="200" style="border:1px solid black">
+			<circle cx="50" cy="50" r="40" stroke="black" stroke-width="10" fill="red" />
+
+		</svg>
+		
+		<script>
+			var canvas = document.getElementById("mycanvas");
+			var ctx = canvas.getContext("2d");
+			ctx.moveTo(100,100);
+			ctx.lineTo(100,200);
+			
+			ctx.stroke();
+
+			ctx.lineTo(200,200);
+			ctx.stroke();
+			ctx.moveTo(100,100);
+			ctx.lineTo(200,100);
+			ctx.stroke();
+		
+
+
+ctx.beginPath();
+ctx.arc(50, 50, 40, 0, 2 * Math.PI);
+ctx.stroke(); 
+
+ctx.font = "30px Arial";
+ctx.fillText("Hello World", 120, 160); 
+		</script>
+	</body>
+</html>

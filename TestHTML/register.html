@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+	<meta charset="UTF-8">
+	<title>RedHill - Kayıt ol</title>
+	<link rel="stylesheet" href="body.css">
+	<link rel="stylesheet" href="lrv_form.css">
+</head>
+
+<body>
+	<embed width="100%" height="100%" src="navbar/navbar.html"></embed>
+	<section>
+		<h2 class="make_center">Yeni Kayıt</h2>
+		<form method="post">
+			Ad Soyad:
+			<br>
+			<input type="text" name="ad_soyad" placeholder="Lütfen doldurun" minlength="3" maxlength="50" required
+				title="En az 3, en fazla 50 hane olmak zorundadır.">
+			<br><br>
+			Doğum tarihi:
+			<br>
+			<input type="date" name="dogum_tarihi" min="1900-01-01" max="2013-01-01" required
+				title="En az 10 yaşında olmak zorundasınız.">
+			<br><br>
+			Cinsiyet:
+			<input type="radio" name="erkek" checked>Erkek
+			<input type="radio" name="erkek">Kız
+			<input type="radio" name="erkek">Diğer
+			<br><br>
+			Kullanıcı adı:
+			<br>
+			<input type="text" name="kullanici_adi" placeholder="Lütfen doldurun" minlength="5" maxlength="15" required
+				title="Kullanıcı adınız en az 5,en fazla 15 hane olmak zorundadır.">
+			<br><br>
+			Şifre:
+			<br>
+			<input type="password" name="sifre" placeholder="Lütfen doldurun" minlength="10" maxlength="30" required
+				title="Şifreniz en az 10, en fazla 30 hane olmak zorundadır.">
+			<br><br>
+			Yeniden şifre:
+			<br>
+			<input type="password" name="yeniden_sifre" placeholder="Lütfen tekrar doldurun" minlength="10"
+				maxlength="30" required title="Şifreniz en az 10, en fazla 30 hane olmak zorundadır.">
+			<br><br>
+			E-mail adresi:
+			<br>
+			<input type="text" name="email" placeholder="Lütfen doldurun" minlength="5" maxlength="50" required
+				title="E-mail adresiniz en az 5, en fazla 50 karakter olmak zorundadır.">
+			<br><br>
+			Telefon numarası:
+			<br>
+			<input type="text" name="tel_no" placeholder="örnek: 5374639493" pattern="[0-9]{10}" required
+				title="Telefon numaranız 10 karakter ve sadece sayıdan oluşmak zorundadır.">
+			<br><br>
+			<input type="submit" name="gonder" value="Gönder">
+		</form>
+	</section>
+</body>
+
+</html>

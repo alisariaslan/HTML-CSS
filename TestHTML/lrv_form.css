@@ -1,0 +1,26 @@
+body section {
+	width: 280px;
+	margin: auto;
+}
+
+section h2 {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+form {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input[type=text], input[type=password], input[type=date] {
+	padding: 8px;
+	margin-top: 4px;
+	border-radius: 4px;
+}
+
+input[type=submit] {
+	padding: 8px;
+	display: block;
+	width: 100px;
+	margin: auto;
+	border-radius: 8px;
+}

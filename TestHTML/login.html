@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+	<meta charset="UTF-8">
+	<title>RedHill - Giriş yap</title>
+	<link rel="stylesheet" href="body.css">
+	<link rel="stylesheet" href="lrv_form.css">
+</head>
+
+<body>
+	<embed width="100%" height="100%" src="navbar/navbar.html"></embed>
+	<section>
+		<h2 class="make_center">Giriş yap</h2>
+		<form method="post">
+			Kullanıcı adı:
+			<br>
+			<input type="text" name="kullanici_adi" placeholder="Lütfen doldurun" minlength="5" maxlength="15" required
+				title="Kullanıcı adınız en az 5,en fazla 15 hane olmak zorundadır.">
+			<br><br>
+			Şifre:
+			<br>
+			<input type="password" name="sifre" placeholder="Lütfen doldurun" minlength="10"
+				maxlength="30" required title="Şifreniz en az 10, en fazla 30 hane olmak zorundadır.">
+			<br><br>
+			<input type="submit" name="gonder" value="Gönder">
+		</form>
+	</section>
+</body>
+
+</html>
